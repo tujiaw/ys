@@ -33,3 +33,10 @@ p.slogan {
 .copyright a {
   color: #555555;
 }
+
+.infoCurrentItem {
+  padding-top:0px;
+}
+p.infoNav {
+  padding-top:11px;
+}
