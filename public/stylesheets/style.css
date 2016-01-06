@@ -7,6 +7,17 @@ a {
   color: #00B7FF;
 }
 
+a.language {
+  float:right;
+  margin-top:10px;
+  margin-right:20px;
+}
+
+p.slogan {
+  font-size: 18px;
+  font-weight:bold;
+  color:#5b6169;
+}
 .copyright {
   background: #e9e9e9;
   font-size: 13px;
