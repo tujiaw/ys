@@ -6,19 +6,34 @@ extends layout
 block content
    .container
       .row
-         .col-lg-2.sidebar-offcanvas#sidebar
+         .col-sm-3.sidebar-offcanvas#sidebar
             .list-group
                a.list-group-item(href="#") 关于我们
                a.list-group-item(href="#") 企业简介
                a.list-group-item(href="#") 企业文化
                a.list-group-item(href="#") 领导致辞
                a.list-group-item(href="#") 联系我们
-         .col-lg-10
+            table.contact
+               tr
+                  td
+                     p
+                        strong 矿泉水公司
+                     p 地址：湖南长沙高新开发区
+                     p 电话：0731-834849591
+                     p 手机：189876543210
+                     p 联系人：陈先生
+                     p 邮 编：410001
+                     p E-mail：mobanpeizhi@163.com
+                     p 网站：www.mobanpeizhi.com
+
+         .col-sm-9
             .row
-               .col-lg-4.pull-left
-                  h4.infoCurrentItem 关于我们
-               .col-lg-4.pull-right
-                  p.infoNav 首页>关于我们>企业简介
+               h4.infoCurrentItem 关于我们
+               p.infoNav
+                  each item in infoNav
+                     <a href="#">#{item}</a> >
+
+               p.clearBoth.hidden
             hr
             p.
                互联网信息公司是国内领先的B2B电子商务服务提供商，依托其核心互联网产品买卖通以及雄厚的传统营销渠道--广告与中国资讯大全、研究院行业分析报告为客户提供线上、线下的全方位服务，这种优势互补，纵横立体的架构，已成为中国B2B行业的典范，对电子商务的发展具有革命性影响。

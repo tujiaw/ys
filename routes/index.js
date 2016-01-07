@@ -7,7 +7,10 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/aboutUs', function(req, res, next) {
-  res.render('info', {active: 'aboutUs'});
+  res.render('info', {
+    active: 'aboutUs',
+    infoNav: ['1111', '2222', '33333']
+  });
 });
 
 module.exports = router;
